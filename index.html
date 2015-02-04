@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="pl" manifest="manifest.appcache-disabled">
+    <head>
+        <meta charset="UTF-8">    
+        <title>Szachy</title>
+
+        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="stylesheet" href="styles/fontfaces.css" />
+
+        <script src="scripts/jquery-1.7.1.min.js"></script>
+        <script src="scripts/modernizr.js"></script>
+        <script src="scripts/loader.js"></script>
+    </head>
+    <body>
+        <div id="game">
+            <div class="background"></div>
+
+            <div class="screen" id="splash-screen">
+                <h1 class="logo">Szachy</h1>
+                <div class="progress">
+                    <div class="indicator"></div>
+                </div>
+                <span class="continue">Dalej...</span>
+            </div>       
+
+            <div class="screen" id="main-menu">
+                <h2 class="logo">Szachy</h2>
+                <ul class="menu">
+                    <li><button name="game-screen">Graj</button>
+                    <li><button name="demo">Demo</button>
+                    <li><button name="about">O grze</button>
+                    <li><button name="exit-screen">Zamknij</button>
+                </ul>
+            </div>
+
+            <div class="screen" id="game-screen">
+                <div class="game-board jewel-size">
+                    <div class="announcement"></div>
+                    <div class="newpieces">
+                        <div id="queen"></div>
+                        <div id="bishop"></div>
+                        <div id="knight"></div>
+                        <div id="rook"></div>
+                    </div>
+                    <div class="newpiecesb">
+                        <div id="queenb"></div>
+                        <div id="bishopb"></div>
+                        <div id="knightb"></div>
+                        <div id="rookb"></div>
+                    </div>
+                </div>
+
+                <div class="game-info">
+                    <label class="level">Białe</label>
+                    <div class="time progress">
+                        <div class="indicator"></div>                       
+                    </div> 
+                    <label class="level clearfix">Czarne</label>
+                    <div class="time progress">
+                        <div class="indicator1"></div>                       
+                    </div>
+                </div>
+
+                <footer class="clearfix">
+                    <button name="exit">Zamknij</button>
+                </footer>
+
+                <div class="pause-overlay"></div>
+
+            </div>
+
+            <div class="screen" id="demo">
+                <div class="game-board jewel-size">               
+                </div>
+                <label class="gamelabel">Partia : Byrne Donald - Fischer Robert</label>
+                <footer>
+                    <button name="back">Menu</button>
+                </footer>           
+            </div>       
+        </div>
+    </body>
+</html>
